@@ -48,11 +48,8 @@
             }
             
             echo "<br>";
-            $start_number = 20;
-            $end_number = 2;
-            $step = -2;
-            for ($number = $start_number; $number >= $end_number; $number += $step) {
-                echo "$number - I Love PHP <br>";
+            for ($i = 20; $i >= 2; $i=$i-2) {
+                echo "$i - I Love PHP <br>";
             }
 
 
@@ -76,8 +73,8 @@
         $rest = array();
 
         foreach ($numbers as $number) {
-            $remainder = $number % 5;
-            $rest[] = $remainder;
+            $hasil = $number % 5;
+            $rest[] = $hasil;
         }
         print_r($rest);
 
@@ -137,7 +134,7 @@
         // Loop through the items and print each as an associative array
         foreach ($items as $item) {
             print_r($item);
-            echo "\n <br>";
+            echo "<br>";
         }
 
         echo "<h3>Soal No 4 Asterix </h3>";
@@ -158,7 +155,7 @@
             for ($j = 1; $j <= $i; $j++) {
                 echo "* ";
             }
-            echo "\n <br>";
+            echo "<br>";
         }
     ?>
 
